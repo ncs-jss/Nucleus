@@ -215,27 +215,27 @@ $(".overlay-dark,.overlay-dark-mob").hide();
 
 // landing page scripting=================
 
-$(".login-container").fadeOut();
+// $(".login-container").fadeOut();
 
 
-$(".login-click").click(function(){
+// $(".login-click").click(function(){
 
-$(".login-container").fadeIn();
-$("body").css({
-	"overflow":"hidden"
-})
+// $(".login-container").fadeIn();
+// $("body").css({
+// 	"overflow":"hidden"
+// })
 
-})
+// })
 
 
-$(".login-overlay,.cross").click(function(){
+// $(".login-overlay,.cross").click(function(){
 
-$(".login-container,.search-container").fadeOut();
-$("body").css({
-	"overflow-y":"scroll"
-})
+// $(".login-container,.search-container").fadeOut();
+// $("body").css({
+// 	"overflow-y":"scroll"
+// })
 
-})
+// })
 
 
 $(".search-container").hide();

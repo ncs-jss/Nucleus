@@ -9,6 +9,7 @@
 
 	<link rel="stylesheet" href="css/default.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
 
 	
@@ -69,6 +70,10 @@
 					<li>
 						<a href="#">
 						<i class="fa fa-graduation-cap"></i> &nbsp;Placement<!-- <span class="number">1</span> --></a>
+					</li>
+					<li>
+						<a class="search2">
+						<i class="fa fa-filter"></i> &nbsp;Filter Notices<!-- <span class="number">1</span> --></a>
 					</li>
 					<li>
 						<a href="#">
@@ -156,15 +161,18 @@
 							<li>
 								<a href="index.html">Home</a>
 							</li>
+							
 							<li>
 								<a href="#">About</a>
 							</li>
 							<li>
 								<a href="#">Contact</a>
 							</li>
+							
 							<li>
 								<a href="#">JSS Website</a>
 							</li>
+							
 						</ul>
 					</div>
 					<div class="mob-side-link">
@@ -200,6 +208,9 @@
 						<div class="search  col-6 push-right">
 							<input type="text" name="search" placeholder="search"><i class="fa fa-search"></i>
 						</div>
+
+
+
 					</div>
 				</div>
 			</div>
@@ -677,6 +688,92 @@
 		</footer>
 	</div>
 
+
+
+<div class="search-container">
+
+	<div class="cross">
+		<i class="fa fa-times">
+		</i>
+	</div>
+	<div class="login-overlay ">
+	</div>
+	<div class="login search-main">
+		
+			<div class="login-head search-head">
+				<h3>Search for Uploaded Notices.</h3>
+			</div>
+			
+		
+		<div class="login-form">
+			<form>
+				<input class="input-style" type="text" placeholder="Subject" required>
+				<input class="input-style" type="text" placeholder="Message" required>
+				<input class="input-style" type="text" placeholder="Posted By" required>
+				<div class="side-text">Posting Date Between </div>
+
+				<select class="input-style select-style" id="date-id" required >
+				<option value="" disabled selected hiddened>Date</option>
+				</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				
+				<select class="input-style select-style" id="month-id" required >
+				<option value="" disabled selected hiddened>Month</option>
+				</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			
+				<select class="input-style select-style" id="year" required >
+				<option value="" disabled selected hiddened>Year</option>
+				</select>
+
+				<h5>to</h5>
+				<select class="input-style select-style" id="date-id2" required >
+				<option value="" disabled selected hiddened>Date</option>
+				</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				
+				<select class="input-style select-style" id="month-id2" required >
+				<option value="" disabled selected hiddened>Month</option>
+				</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			
+				<select class="input-style select-style" id="year2" required >
+				<option value="" disabled selected hiddened>Year</option>
+				</select>
+
+
+				<div class="side-text">Posting for </div>
+
+				<select class="input-style select-style" id="batch-id" required >
+				<option value="" disabled selected hiddened>Batch</option>
+				</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				
+				<select class="input-style select-style" id="branch-id" required >
+				<option value="" disabled selected hiddened>Branch</option>
+				<option>BTECH CSE</option>
+				<option>BTECH ME</option>
+				<option>BTECH ECE</option>
+				<option>BTECH EEE</option>
+				<option>BTECH CSE</option>
+				<option>BTECH CSE</option>
+				<option>BTECH CSE</option>
+				<option>BTECH CSE</option>
+				</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			
+				<select class="input-style select-style" id="section" required >
+				<option value="" disabled selected hiddened>Section</option>
+				<option>CS-1</option>
+				<option>CS-2</option>
+				</select>
+
+
+
+				<button type="reset" value="reset"  class="reset">Reset</button>
+				<button type="submit" value="submit" class="right">Search</button>
+				<div class="clear">
+				</div>
+				
+			</form>
+		</div>
+
+	</div>
+</div>
 
 
 <script src="js/jquery.js"></script>
