@@ -1,45 +1,5 @@
-header{
-	/*padding:20px 40px;*/
-	background: #403469;
-	height: 80px;
-	box-shadow: 0px 0px 4px #000;
-	padding: 0px 40px;
-	position: absolute;
-	width: 100vw;
-	z-index: 10;
-	font-family: 'Roboto';
-}
-ul li{
-	display: inline-block;
-	list-style: none;
-}
-.logo-index {
-	height: 50px;
-	margin-top: 15px;
-}
-.logo-index img{
-	height: 100%;
-}
-header ul {
-	float: right;
-	overflow: hidden;
-}
-header ul li{
-	margin-left: -5px;
-	padding: 33px 22px;
-	color: #fff;
-	font-family: 'Roboto Light';
-	font-size: 0.9em;	
-	transition:all 0.2s ease-in-out;
-	border-bottom: 2px solid transparent;
 
-	
-}
-header ul li:hover{
-	color: #e6c115;
-	background: #180f36;
-	border-bottom: 2px solid #e6c115;
-}
+
 .login-container{
 	display: block;
 	position: fixed;
@@ -92,12 +52,16 @@ header ul li:hover{
 	display: inline;
 }
 .login-head h3 span{
-	font-family: 'Roboto Bold'
+	font-family: 'Roboto Bold';
+	font-size: 1.1em;
 }
 .login-form{
 	padding: 30px 40px;
 	font-family: 'Roboto'
 
+}
+.login-head h3 {
+	font-size: 1em;
 }
 .login-form form .input-style{
 	width: 100%;
@@ -193,6 +157,7 @@ header ul li:hover{
 
 
 .search-container{
+	top: 0px;
 	display: block;
 	position: absolute;
 	z-index: 20;
@@ -234,23 +199,7 @@ color: #9d9d9d;
 .login-form h5{
 	margin-bottom: 10px;
 }
-.index-container{
-	position: absolute;
-	width: 100%;
 
-}
-.index-img{
-	height: 100vh;
-	overflow: hidden;
-}
-.index-img img{
-	height: 100%;
-}
-.index-img{
-	background: url(../images/ab-1.JPG);
-	background-size: cover;
-	background-position: fixed;
-}
 .white-overlay{
 	display: block;
 	position: absolute;
@@ -260,69 +209,4 @@ color: #9d9d9d;
 	width: 100%;
 	height: 100%;
 	background: rgba(64, 52, 105,0.9);
-}
-.new-college{
-	display: block;
-	width: 100%;
-	padding-bottom: 40px;
-	
-	/*position: absolute;*/
-	z-index: 1;
-}
-.new-college h3{
-	padding: 120px 40px 20px 40px;
-	font-family: 'Roboto';
-	color: #957BC9;
-
-}
-.new-notices h3{
-	color: #9d9d9d;
-}
-.new-college {
-	font-family: 'Roboto Light';
-	box-shadow: 0px 0px 4px transparent;
-	color: #ddd;
-	width: 100%;
-
-
-}
-.new-notices{
-	color: #4d4d4d;
-}
-.new-college a{
-	width: 100%;
-	padding: 20px 20px 20px 40px;
-	line-height: 18px;
-		transition:all 0.2s ease-in-out;
-}
-.new-college a:hover{
-	color: #fff;
-	box-shadow: 0px 0px 4px #322757;
-	background:rgba(64, 52, 105,1);
-
-}
-.new-college a:hover .new-author{
-	color: #e6c115;
-}
-.new-author{
-	color: #957BC9;
-	font-family: 'Roboto';
-	transition:all 0.2s ease-in-out;
-}
-.img-container{
-	position: fixed;
-	z-index:-2;
-	width: 100%;
-	height: 100vh;
-	
-}
-.black-font{
-	color: #4d4d4d;
-}
-@media(max-width: 540px){
-	header{
-
-	padding: 0px 20px;
-	
-}
 }

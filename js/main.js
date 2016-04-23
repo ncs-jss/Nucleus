@@ -145,7 +145,7 @@ $(document).ready(function () {
 $(".overlay-dark,.overlay-dark-mob").hide();
 	if($(window).width()<=780){
 	
-	$(".mobile-menu").click(function(){
+	$(".mobile-menu,.index-bars").click(function(){
 		$(".left-nav").css({
 			'margin-left':'0px',
 			'z-index':'2'
@@ -239,7 +239,7 @@ $("body").css({
 
 
 $(".search-container").hide();
-$(".search").click(function(){
+$(".search2").click(function(){
 
 	$(".search-container").fadeIn();
 	$("body").css({
