@@ -213,36 +213,181 @@ $(".overlay-dark,.overlay-dark-mob").hide();
 
 
 
+// landing page scripting=================
+
+$(".login-container").fadeOut();
 
 
+$(".login-click").click(function(){
+
+$(".login-container").fadeIn();
+$("body").css({
+	"overflow":"hidden"
+})
+
+})
 
 
-// var auth_height=$(".author").outerHeight();
-// var date_height=$(".date").outerHeight();
-// var post_height=$(".post_head").outerHeight();
-// console.log(auth_height);
-// console.log(date_height);
-// console.log(post_height);
+$(".login-overlay,.cross").click(function(){
 
-// var max=function(a,b,c){
-// 	if(a>=b && a>=c){
-// 		return a
-// 	}
-// 	else if(b>a && b>=c){
-// 		return b
-// 	}
-// 	else{
-// 		return c
-// 	}
-// }
-// var max_height=max(auth_height,date_height,post_height);
+$(".login-container,.search-container").fadeOut();
+$("body").css({
+	"overflow-y":"scroll"
+})
 
-// console.log(max_height)
+})
 
-// $(".author, .date, .post_head").css({
-// 	'height':max_height,
-// 	'border':'1px solid red'
-// })
+
+$(".search-container").hide();
+$(".search").click(function(){
+
+	$(".search-container").fadeIn();
+	$("body").css({
+	"overflow":"hidden"
+})
+})
+
+
+var i,j;
+for(i=1;i<=31;i++){
+	$("#date-id").append("<option>"+i+"</option>");
+	$("#date-id2").append("<option>"+i+"</option>");
+}
+for(j=1;j<=12;j++){
+	$("#month-id").append("<option>"+j+"</option>");
+	$("#month-id2").append("<option>"+j+"</option>");
+}
+
+
+setInterval(function(){
+	if($("#year option:selected").text()=="Year" ) { 
+      
+		
+		$("#year").css({
+			'color':'#9d9d9d'
+		})
+ 	 }
+ 	 else  { 
+      $("#year").css({
+			'color':'#000'
+		})
+
+ 	 }
+ 	 if($("#year2 option:selected").text()=="Year" ) { 
+      
+		
+		$("#year2").css({
+			'color':'#9d9d9d'
+		})
+ 	 }
+ 	 else  { 
+      $("#year2").css({
+			'color':'#000'
+		})
+
+ 	 }
+
+ 	 if($("#date-id option:selected").text()=="Date" ) { 
+      
+		
+		$("#date-id").css({
+			'color':'#9d9d9d'
+		})
+ 	 }
+ 	 else  { 
+      $("#date-id").css({
+			'color':'#000'
+		})
+
+ 	 }
+ 	  if($("#date-id2 option:selected").text()=="Date" ) { 
+      
+		
+		$("#date-id2").css({
+			'color':'#9d9d9d'
+		})
+ 	 }
+ 	 else  { 
+      $("#date-id2").css({
+			'color':'#000'
+		})
+
+ 	 }
+
+ 	 if($("#month-id option:selected").text()=="Month" ) { 
+      
+
+		
+		$("#month-id").css({
+			'color':'#9d9d9d'
+		})
+ 	 }
+ 	 else  { 
+      $("#month-id").css({
+			'color':'#000'
+		})
+
+ 	 }
+ 	 if($("#month-id2 option:selected").text()=="Month" ) { 
+      
+
+		
+		$("#month-id2").css({
+			'color':'#9d9d9d'
+		})
+ 	 }
+ 	 else  { 
+      $("#month-id2").css({
+			'color':'#000'
+		})
+
+ 	 }
+
+ 	 if($("#batch-id option:selected").text()=="Batch" ) { 
+      
+
+		
+		$("#batch-id").css({
+			'color':'#9d9d9d'
+		})
+ 	 }
+ 	 else  { 
+      $("#batch-id").css({
+			'color':'#000'
+		})
+
+ 	 }
+ 	 if($("#branch-id option:selected").text()=="Branch" ) { 
+      
+
+		
+		$("#branch-id ").css({
+			'color':'#9d9d9d'
+		})
+ 	 }
+ 	 else  { 
+      $("#branch-id ").css({
+			'color':'#000'
+		})
+
+ 	 }
+ 	 if($("#section option:selected").text()=="Section" ) { 
+      
+
+		
+		$("#section").css({
+			'color':'#9d9d9d'
+		})
+ 	 }
+ 	 else  { 
+      $("#section").css({
+			'color':'#000'
+		})
+
+ 	 }
+ 	 
+ 	 
+})
 
 
 

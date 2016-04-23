@@ -414,7 +414,7 @@ footer h4{
 	text-align: center;
 	transition:all 0.2s ease;
 	cursor: pointer;
-	background-color: #fff;
+	background-color: transparent;
 }
 .relevant-info .cross i{
 	color: #4d4d4d;
@@ -598,6 +598,9 @@ footer h4{
 .sec{
 	cursor: pointer;
 }
+
+
+
 @media(max-width: 780px){
 	.head-links{
 		display: none;
