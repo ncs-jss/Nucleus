@@ -144,6 +144,28 @@ $(document).ready(function () {
 
 $(".overlay-dark,.overlay-dark-mob").hide();
 	if($(window).width()<=780){
+
+		$(".search2").click(function(){
+
+	$(".left-nav").css({
+			'margin-left':'-250px',
+			'z-index':'2'
+		})
+		
+		$(".overlay-dark,.overlay-dark-mob").fadeOut();
+		$(".dot-menu-links").css({
+			'right':-$(".dot-menu-links").outerWidth()-50
+		});
+
+		$(".dot-menu-links").hide();
+
+	$(".search-container").fadeIn();
+	$("body").css({
+
+	"overflow-y":"hidden "
+})
+	
+})
 	
 	$(".mobile-menu,.index-bars").click(function(){
 		$(".left-nav").css({
@@ -174,7 +196,7 @@ $(".overlay-dark,.overlay-dark-mob").hide();
 
 	// cross-mobile
 
-	$(".cross-mobile,.overlay-dark,.overlay-dark-mob,.left-nav-inner,.dot-menu-links ul li").click(function(){
+	$(".cross-mobile,.overlay-dark,.overlay-dark-mob,.move-in,.dot-menu-links ul li").click(function(){
 		$(".left-nav").css({
 			'margin-left':'-250px',
 			'z-index':'2'
@@ -218,33 +240,36 @@ $(".overlay-dark,.overlay-dark-mob").hide();
 // $(".login-container").fadeOut();
 
 
-// $(".login-click").click(function(){
+$(".login-click").click(function(){
 
-// $(".login-container").fadeIn();
-// $("body").css({
-// 	"overflow":"hidden"
-// })
+$(".login-container").fadeIn();
+$("body").css({
+	"overflow":"hidden"
+})
 
-// })
+})
 
 
-// $(".login-overlay,.cross").click(function(){
+$(".cross").click(function(){
 
-// $(".login-container,.search-container").fadeOut();
-// $("body").css({
-// 	"overflow-y":"scroll"
-// })
+$(".search-container").fadeOut();
+$("body").css({
+	"overflow-y":"scroll"
+})
 
-// })
+})
 
 
 $(".search-container").hide();
 $(".search2").click(function(){
 
+	
 	$(".search-container").fadeIn();
 	$("body").css({
-	"overflow":"hidden"
+
+	"overflow-y":"hidden "
 })
+	
 })
 
 
@@ -389,6 +414,20 @@ setInterval(function(){
  	 
 })
 
+// usingescapen butto  to minimize the notice page===
 
+
+
+$(document).keyup(function(e) {
+ 
+  if (e.keyCode === 27){
+  	
+		$(".relevant-info").fadeOut("fast");
+		$("body").css({
+			'overflow-y': 'scroll'
+		})
+	
+  }   // esc
+});
 
 });
