@@ -1,6 +1,6 @@
 
 body{
-	font-family: 'Roboto Regular';
+	font-family: 'Roboto';
 
 }
 .left-nav-inner ul li .active{
@@ -305,7 +305,7 @@ header,.sub-header{
 	padding: 0px 20px ;
 	color:#252525;
 	/*font-size: 0.9em;*/
-	font-family: 'Roboto Regular';
+	font-family: 'Roboto';
 	transition:all 0.2s ease;
 	/*cursor:pointer;*/
 }
@@ -372,7 +372,7 @@ footer{
 .footer-links{
 		color:#908a9f;
 	font-size: 0.9em;
-	font-family: 'Roboto Regular' ;
+	font-family: 'Roboto' ;
 	padding: 12px 0px;
 
 
@@ -458,7 +458,7 @@ footer h4{
 	color: #4d4d4d;
 	padding-top:10px;
 	text-align: left;
-	font-family: 'Roboto Regular';
+	font-family: 'Roboto';
 	font-size: 0.9em;
 }
 .date-author-info{
@@ -625,7 +625,7 @@ footer h4{
 	height: 100%;
 	background: #180f36;
 	opacity: 0.9;
-}
+}/
 .index-header{
 	border-bottom: 1px solid #9d9d9d;
 	height: 100px;
@@ -782,6 +782,8 @@ footer h4{
 	text-align: center;
 	line-height: 40px;
 }
+
+
 @media(max-width: 780px){
 	.index-welcome span{
 
