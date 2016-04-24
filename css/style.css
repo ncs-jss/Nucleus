@@ -125,12 +125,12 @@
 	float: right;
 }
 .login-overlay{
-	position: fixed;
-	z-index: 1;
-	background: rgba(255,255,255,0.8);
+	position: absolute;
+	z-index: -1;
+	background: rgba(255,255,255,0);
 	width: 100vw;
 	height: 100vh;
-	overflow-y:scroll;
+	overflow-y:hidden;
 	overflow-x:hidden;
 }
 .cross{
@@ -191,7 +191,7 @@
 	width: 500px;
 }
 .search-container form .select-style {
-width: 120px;
+/*width: 120px;*/
 padding: 10px 0px;
 /*margin-left: 18px;*/
 font-family: 'Roboto';

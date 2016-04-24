@@ -250,7 +250,7 @@ $("body").css({
 })
 
 
-$(".cross").click(function(){
+$(".cross,.login-overlay").click(function(){
 
 $(".search-container").fadeOut();
 $("body").css({
@@ -429,5 +429,29 @@ $(document).keyup(function(e) {
 	
   }   // esc
 });
+
+// validation for search box===========
+
+var val_branch=$("#branch-id option:selected").text();
+
+
+setInterval(function(){
+	val_branch= $("#branch-id option:selected").text();
+},0);
+
+
+
+setInterval(function(){
+
+	
+switch(val_branch){
+	case "BTECH CSE":
+		$("#section").html("<option val='' disabled selected hiddened>Section</option><option>CS-1</option><option>CS-2</option>");
+		break;
+	
+}
+
+
+},0);
 
 });

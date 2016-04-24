@@ -13,8 +13,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
 
-	<script src="js/jquery.js"></script>
- 	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	
 	
  
 </head>
@@ -714,54 +713,30 @@
 				<input class="input-style" type="text" placeholder="Posted By" required>
 				<div class="side-text">Posting Date Between </div>
 
-				<!-- <select class="input-style select-style" id="date-id" required >
-				<option value="" disabled selected hiddened>Date</option>
-				</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				
-				<select class="input-style select-style" id="month-id" required >
-				<option value="" disabled selected hiddened>Month</option>
-				</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			
-				<select class="input-style select-style" id="year" required >
-				<option value="" disabled selected hiddened>Year</option>
-				</select>
-
-				<h5>to</h5>
-				<select class="input-style select-style" id="date-id2" required >
-				<option value="" disabled selected hiddened>Date</option>
-				</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				
-				<select class="input-style select-style" id="month-id2" required >
-				<option value="" disabled selected hiddened>Month</option>
-				</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			
-				<select class="input-style select-style" id="year2" required >
-				<option value="" disabled selected hiddened>Year</option>
-				</select> -->
 				 
 				
-				
-					<input type="text" id="datepicker">
+				<div class="row">
+					<div class="col sm-col-5">
+					<input type="text" id="datepicker" class="input-style input-calendar" placeholder="dd/mm/yyyy">
+				</div>
+				<div class="text-center col sm-col-2">to</div>
+				<div class="col sm-col-5">
+					<input type="text" id="datepicker-to" class="input-style input-calendar" placeholder="dd/mm/yyyy">
+				</div>
+			</div>
 
-					<script>
-					  $(function() {
-					    $( "#datepicker" ).datepicker();
-					  });
 
-					  $(".search-container").on("scroll", function(){
-					  	console.log("working");
-					  	var cale= $(this).find("input.hasDatepicker");
-					  	$("#ui-datepicker-div").css("top", cale.offset().top +cale.outerHeight());
-
-					  })
-					  </script>
+					
 
 				<div class="side-text">Posting for </div>
-
+				<div class="row">
+					<div class="col col-4">
 				<select class="input-style select-style" id="batch-id" required >
 				<option value="" disabled selected hiddened>Batch</option>
-				</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</select></div>
 				
+
+				<div class="col col-4">
 				<select class="input-style select-style" id="branch-id" required >
 				<option value="" disabled selected hiddened>Branch</option>
 				<option>BTECH CSE</option>
@@ -772,14 +747,17 @@
 				<option>BTECH CSE</option>
 				<option>BTECH CSE</option>
 				<option>BTECH CSE</option>
-				</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</select>
+			</div>
 			
+
+
+				<div class="col col-4">
 				<select class="input-style select-style" id="section" required >
 				<option value="" disabled selected hiddened>Section</option>
-				<option>CS-1</option>
-				<option>CS-2</option>
+				
 				</select>
-
+			</div>
 
 
 				<button type="reset" value="reset"  class="reset">Reset</button>
@@ -790,16 +768,38 @@
 			</form>
 		</div>
 	</div>
+	
 </div>
 
 
-	
+	<script src="js/jquery.js"></script>
+ 	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<script src="js/main.js" ></script>
+	<script>
+		$(function() {
+			$( "#datepicker" ).datepicker();
+			$( "#datepicker-to" ).datepicker();
+		});
 
+		$(".search-container").on("scroll", function(){
+			// console.log("working");
+			var cale= $(this).find("input.hasDatepicker");
+			$("#ui-datepicker-div").css("top", cale.offset().top +cale.outerHeight());
 
- 
+		})
 
+var d = new Date();
+var y = d.getFullYear();
+var n = 2000;
 
+(function selectOne() {
+    
+      var batch = document.getElementById('batch-id');
+     for (var i=y; i>=n; i--) {
+        batch.options[batch.options.length] = new Option(i, i);
+     }
+   })();
+</script>
 </body>
 
 </html>

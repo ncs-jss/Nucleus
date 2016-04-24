@@ -772,7 +772,16 @@ footer h4{
 .index-bars i{
 	font-size: 26px;
 }
+/*calendar styling======*/
 
+
+.input-calendar{
+	width: 50%;
+}
+.text-center{
+	text-align: center;
+	line-height: 40px;
+}
 @media(max-width: 780px){
 	.index-welcome span{
 

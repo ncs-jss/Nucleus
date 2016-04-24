@@ -485,26 +485,6 @@
 <script src="js/main.js" ></script>
 
 
-<script>
-var d = new Date();
-var y = d.getFullYear();
-var n = 2000;
-
-(function selectOne() {
-     var select = document.getElementById('year');
-     for (var i=y; i>=n; i--) {
-        select.options[select.options.length] = new Option(i, i);
-     } 
-     var select2 = document.getElementById('year2');
-     for (var i=y; i>=n; i--) {
-        select2.options[select2.options.length] = new Option(i, i);
-     }
-      var batch = document.getElementById('batch-id');
-     for (var i=y; i>=n; i--) {
-        batch.options[batch.options.length] = new Option(i, i);
-     }
-   })();
-</script>
 
 </body>
 
