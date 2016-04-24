@@ -414,6 +414,9 @@ setInterval(function(){
  	 
 })
 
+
+
+
 // usingescapen butto  to minimize the notice page===
 
 
@@ -427,31 +430,35 @@ $(document).keyup(function(e) {
 			'overflow-y': 'scroll'
 		})
 	
-  }   // esc
+  }   
 });
 
-// validation for search box===========
-
-var val_branch=$("#branch-id option:selected").text();
 
 
-setInterval(function(){
-	val_branch= $("#branch-id option:selected").text();
-},0);
+// add search validation data here==========
 
+$("#branch-id").change(function(){
+	var val=$(this).val();
 
-
-setInterval(function(){
-
-	
-switch(val_branch){
-	case "BTECH CSE":
-		$("#section").html("<option val='' disabled selected hiddened>Section</option><option>CS-1</option><option>CS-2</option>");
+	switch(val){
+		case "BTECH CSE":
+		$("#section").html("<option>CS-1</option><option>CS-2</option>");
 		break;
-	
-}
+		case "BTECH ECE":
+		$("#section").html("<option>ECE-1</option><option>ECE-2</option>");
+		break;
+		case "BTECH EEE":
+		$("#section").html("<option>EEE-1</option><option>EEE-2</option>");
+		break;
+		case "BTECH ME":
+		$("#section").html("<option>ME-1</option><option>ME-2</option>");
+		break;
+		case "BTECH CE":
+		$("#section").html("<option>CE-1</option><option>CE-2</option>");
+		break;
 
+		}
 
-},0);
+})
 
 });
