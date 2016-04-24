@@ -774,6 +774,9 @@ footer h4{
 }
 /*calendar styling======*/
 
+.ui-datepicker.ui-datepicker-multi {
+	width: 500px !important;
+}
 
 .input-calendar{
 	width: 50%;
