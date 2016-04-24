@@ -716,12 +716,8 @@
 				 
 				
 				<div class="row">
-					<div class="col sm-col-5">
+					<div class="col sm-col-12">
 					<input type="text" id="datepicker" class="input-style input-calendar" placeholder="dd/mm/yyyy">
-				</div>
-				<div class="text-center col sm-col-2">to</div>
-				<div class="col sm-col-5">
-					<input type="text" id="datepicker-to" class="input-style input-calendar" placeholder="dd/mm/yyyy">
 				</div>
 			</div>
 
@@ -774,19 +770,17 @@
 
 	<script src="js/jquery.js"></script>
  	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+ 	<script src="js/jquery.daterange.js"></script>
 	<script src="js/main.js" ></script>
-	<script>
-		$(function() {
-			$( "#datepicker" ).datepicker();
-			$( "#datepicker-to" ).datepicker();
-		});
 
-		$(".search-container").on("scroll", function(){
-			// console.log("working");
-			var cale= $(this).find("input.hasDatepicker");
-			$("#ui-datepicker-div").css("top", cale.offset().top +cale.outerHeight());
-
-		})
+		<script>
+			$(function () {
+			    $("#datepicker").daterange({
+			       dateFormat: "dd/mm/yy", //date format
+				rangeSeparator: " to " // the string between first and last date
+			    });
+			});
+		
 
 var d = new Date();
 var y = d.getFullYear();
