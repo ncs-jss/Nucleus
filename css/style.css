@@ -125,6 +125,9 @@
 	color: #fff;
 	border: 2px solid #180f36;
 }
+.login-form form .reset-search{
+	float: left;
+}
 
 .right{
 	float: right;
