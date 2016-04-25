@@ -786,6 +786,93 @@ footer h4{
 	line-height: 40px;
 }
 
+/*profile page===============*/
+
+h3.profile-head{
+	font-size: 28px;
+	font-family: 'Roboto Medium';
+	margin-top: 15px;
+    color: #5d5473;
+   
+}
+
+.profile-header{
+	height: 100px;
+	border-bottom: 1px solid #ddd;
+}
+.profile-form{
+	padding:30px 20px 50px 20px  ;
+}
+.profile-form h2{
+	color: #9d9d9d;
+	font-size: 0.8em;
+	font-family: 'Roboto Medium';
+	margin-bottom:2px;
+	transition:all 0.2s ease-in-out;
+}
+
+.profile-form input{
+	font-family: 'Roboto';
+	font-size: 1em;
+	color: #252525;
+}
+.edit-profile{
+	display: inline-block;
+	padding:12px 20px;
+	border-radius: 20px;
+	background: #5d5473;
+	color: #fff;
+	font-family: 'Roboto';
+	font-size: 0.9em;
+	
+	
+	cursor: pointer;
+	transition:all 0.2s ease-in-out;
+}
+.edit-profile-text{
+	color: #4d4d4d;
+	float: right;
+	font-size: 1em;
+	cursor: pointer;
+	transition:all 0.2s ease-in-out;
+}
+.edit-profile-text:hover{
+	color: #e6c115;
+}
+.edit-profile:hover{
+	background: #2d2251;
+}
+.profile-head .mobile-menu{
+	color: #5D5473;
+}
+
+.edit-save{
+	display: inline-block;
+}
+.save-profile{
+	display: none;
+	padding: 10px 18px;
+	background: transparent;
+	color: #4d4d4d;
+	border: 2px solid #9d9d9d;
+}
+.save-profile:hover{
+	border: 2px solid  #2d2251;
+	color: #fff;
+}
+.top-range{
+	margin-top: 20px;
+}
+@media(max-width: 950px){
+	.pad-list a{
+		padding:18px 30px 18px 30px
+	}
+	.new-notices-container h2{
+	padding-left: 30px;
+}
+
+}
+
 
 @media(max-width: 780px){
 	.index-welcome span{
@@ -863,17 +950,27 @@ footer h4{
 .left-nav-inner-index{
 	height:calc(100% - 152px);
 }
-
-}
-@media(max-width: 950px){
-	.pad-list a{
-		padding:18px 30px 18px 30px
+.edit-profile-text{
+		margin-right: 40px;
+		width: 100px;
+		margin-top: 2px;
 	}
-	.new-notices-container h2{
-	padding-left: 30px;
+h3.profile-head{
+	font-size: 26px;
+
+	margin-top: 12px;
+   
+   
+}
+.profile-header{
+	height: 89px;
+}
+.edit-save{
+	display: none;
+}
 }
 
-}
+
 @media(max-width: 640px){
 	/*.relevant-content-head{
 		display: none;
@@ -894,6 +991,11 @@ footer h4{
 			
 		padding: 25px;
 	}
+	.edit-profile-text{
+		display: none;
+	}
+	
+
 }
 @media(max-width: 480px){
 	.jss-logo{

@@ -71,7 +71,7 @@
 .login-head h3 {
 	font-size: 1em;
 }
-.login-form form .input-style{
+.input-style{
 	width: 100%;
 	border: 0px;
 	border-bottom: 1px solid #848484;
@@ -82,7 +82,7 @@
 	transition:all 0.4s ease-in-out;
 
 }
-.login-form form .input-style:focus{
+ .input-style:focus{
 	
 	border-bottom: 1px solid #e6c115;
 	

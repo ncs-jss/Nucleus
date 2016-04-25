@@ -63,18 +63,7 @@ $(document).ready(function () {
 			})
 		}
 
-		// if ($(window).scrollTop() > 20){
-		// 	$(".dot-menu-links").css({
-		// 		'position':'fixed',
-		// 		'margin-top':'0px'
-		// 	})
-		// }
-		// else{
-		// 	$(".dot-menu-links").css({
-		// 		'position':'absolute',
-		// 		'margin-top':'20px'
-		// 	})
-		// }
+		
 	})
 
 
@@ -214,15 +203,6 @@ $(".overlay-dark,.overlay-dark-mob").hide();
 
 }
 	
-
-
-
-
-
-	// $(".dot-menu-links").click(function(){
-	// 	$(this).fadeOut();
-		
-	// })
 
 	// responsive list in mobile
 	var win_width=$(window).width();
@@ -440,25 +420,56 @@ $(document).keyup(function(e) {
 $("#branch-id").change(function(){
 	var val=$(this).val();
 
+// change data here================
+	
 	switch(val){
 		case "BTECH CSE":
-		$("#section").html("<option>CS-1</option><option>CS-2</option>");
-		break;
+			$("#section").html("<option>CS-1</option><option>CS-2</option>");
+			break;
 		case "BTECH ECE":
-		$("#section").html("<option>ECE-1</option><option>ECE-2</option>");
-		break;
+			$("#section").html("<option>ECE-1</option><option>ECE-2</option>");
+			break;
 		case "BTECH EEE":
-		$("#section").html("<option>EEE-1</option><option>EEE-2</option>");
-		break;
+			$("#section").html("<option>EEE-1</option><option>EEE-2</option>");
+			break;
 		case "BTECH ME":
-		$("#section").html("<option>ME-1</option><option>ME-2</option>");
-		break;
+			$("#section").html("<option>ME-1</option><option>ME-2</option>");
+			break;
 		case "BTECH CE":
-		$("#section").html("<option>CE-1</option><option>CE-2</option>");
-		break;
+			$("#section").html("<option>CE-1</option><option>CE-2</option>");
+			break;
 
 		}
 
 })
 
+
+// edit to save button=========================================
+
+$(".edit-save,.show-icon").hide();
+
+$(".edit-save").click(function(){
+	$(".edit-save").hide();
+	$(".edit-click").fadeIn("fast");
+	$(".profile-form input").prop('disabled',true);
+
+	$(".profile-form form").submit();
+	$(".show-icon").fadeOut();
+
+})
+$(".edit-click").click(function(){
+	$(".edit-click").hide();
+	$(".edit-save").fadeIn("fast");
+
+	$(".profile-form input").prop('disabled',false);
+	$(".profile-form input").css({
+		'border-bottom':'1px solid #e6c115',
+		'color':'#9d9d9d'
+	})
+	$(".profile-form h2").css({
+		'color':'#4d4d4d'
+	})
+	$(".show-icon").fadeIn();
+
+})
 });
