@@ -444,6 +444,11 @@ $("#branch-id").change(function(){
 })
 
 
+	$(".reset").click(function(){
+		$("#section").html("<option value='' disabled selected hiddened>Section</option>");
+	})
+
+
 // edit to save button=========================================
 
 $(".edit-save,.edit-save-2,.show-icon,i.mob-save").hide();
