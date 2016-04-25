@@ -465,13 +465,15 @@ $(".edit-click,i.mob-edit").click(function(){
 
 	if($(window).width()<780){
 		$(".edit-save-2").hide();
+		$("i.mob-save").fadeIn("fast");
 	}
 	else{
 		$(".edit-save-2").fadeIn();
+		$("i.mob-save").hide();
 	}
 
 	$(".edit-click,i.mob-edit").hide();
-	$(".edit-save, i.mob-save").fadeIn("fast");
+	$(".edit-save").fadeIn("fast");
 
 	$(".profile-form input").prop('disabled',false);
 	$(".profile-form input").css({
