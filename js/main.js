@@ -208,7 +208,7 @@ $(".overlay-dark,.overlay-dark-mob").hide();
 	var win_width=$(window).width();
 
 	if(win_width<=640){
-		$(".head-links-resize").removeClass("sm-col-8").addClass("sm-col-2");
+		$(".head-links-resize").removeClass("sm-col-8").addClass("sm-col-4");
 		$(".heading-small").removeClass("sm-col-4").addClass("sm-col-8");
 	$(".relevant-content ul li .post_head").removeClass("sm-col-8").addClass("sm-col-12");
 }
@@ -446,20 +446,27 @@ $("#branch-id").change(function(){
 
 // edit to save button=========================================
 
-$(".edit-save,.show-icon").hide();
+$(".edit-save,.edit-save-2,.show-icon,i.mob-save").hide();
 
-$(".edit-save").click(function(){
-	$(".edit-save").hide();
-	$(".edit-click").fadeIn("fast");
+$(".edit-save,.edit-save-2,i.mob-save").click(function(){
 	$(".profile-form input").prop('disabled',true);
 
 	$(".profile-form form").submit();
 	$(".show-icon").fadeOut();
 
+
 })
-$(".edit-click").click(function(){
-	$(".edit-click").hide();
-	$(".edit-save").fadeIn("fast");
+$(".edit-click,i.mob-edit").click(function(){
+
+	if($(window).width()<780){
+		$(".edit-save-2").hide();
+	}
+	else{
+		$(".edit-save-2").fadeIn();
+	}
+
+	$(".edit-click,i.mob-edit").hide();
+	$(".edit-save, i.mob-save").fadeIn("fast");
 
 	$(".profile-form input").prop('disabled',false);
 	$(".profile-form input").css({
@@ -470,6 +477,7 @@ $(".edit-click").click(function(){
 		'color':'#4d4d4d'
 	})
 	$(".show-icon").fadeIn();
+
 
 })
 });

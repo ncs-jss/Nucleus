@@ -625,7 +625,7 @@ footer h4{
 	height: 100%;
 	background: #180f36;
 	opacity: 0.9;
-}/
+}
 .index-header{
 	border-bottom: 1px solid #9d9d9d;
 	height: 100px;
@@ -863,6 +863,11 @@ h3.profile-head{
 .top-range{
 	margin-top: 20px;
 }
+i.mob-edit,i.mob-save{
+	display: none;
+	margin-right: 50px;
+	float: right;
+}
 @media(max-width: 950px){
 	.pad-list a{
 		padding:18px 30px 18px 30px
@@ -965,9 +970,7 @@ h3.profile-head{
 .profile-header{
 	height: 89px;
 }
-.edit-save{
-	display: none;
-}
+
 }
 
 
@@ -994,7 +997,9 @@ h3.profile-head{
 	.edit-profile-text{
 		display: none;
 	}
-	
+	i.mob-edit{
+	display: inline-block;
+}
 
 }
 @media(max-width: 480px){
