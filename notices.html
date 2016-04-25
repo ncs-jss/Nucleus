@@ -711,22 +711,26 @@
 				<input class="input-style" type="text" placeholder="Subject" required>
 				<input class="input-style" type="text" placeholder="Message" required>
 				<input class="input-style" type="text" placeholder="Posted By" required>
+
+
+
 				<div class="side-text">Posting Date Between </div>
-
-				 
-				
 				<div class="row">
-					<div class="col sm-col-5">
-					<input type="text" id="datepicker" class="input-style input-calendar" placeholder="dd/mm/yyyy">
+					<div id="desktop-date">	
+						<div class="col sm-col-12">
+							<input type="text" id="daterangepicker" class="input-style input-calendar" placeholder="dd/mm/yyyy">
+						</div>
+					</div>
+					<div id="mobile-date">	
+						<div class="col sm-col-12">
+							<input type="text" id="mobile-datepicker-1" class="input-style input-calendar" placeholder="dd/mm/yyyy">
+						</div>
+						<div class="col sm-col-12">
+							<input type="text" id="mobile-datepicker-2" class="input-style input-calendar" placeholder="dd/mm/yyyy">
+						</div>
+					</div>
 				</div>
-				<div class="text-center col sm-col-2">to</div>
-				<div class="col sm-col-5">
-					<input type="text" id="datepicker-to" class="input-style input-calendar" placeholder="dd/mm/yyyy">
-				</div>
-			</div>
 
-
-					
 
 				<div class="side-text">Posting for </div>
 				<div class="row">
@@ -760,7 +764,7 @@
 			</div>
 
 
-				<button type="reset" value="reset"  class="reset  reset-search">Reset</button>
+				<button type="reset" value="reset"  class="reset">Reset</button>
 				<button type="submit" value="submit" class="right">Search</button>
 				<div class="clear">
 				</div>
@@ -774,18 +778,33 @@
 
 	<script src="js/jquery.js"></script>
  	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+ 	<script src="js/jquery.daterange.js"></script>
 	<script src="js/main.js" ></script>
-	<script>
-		$(function() {
-			$( "#datepicker" ).datepicker();
-			$( "#datepicker-to" ).datepicker();
-		});
 
-		$(".search-container").on("scroll", function(){
-			// console.log("working");
-			var cale= $(this).find("input.hasDatepicker");
+		<script>
+			var width = $(document).width();
+			if(width>640)
+			{
+				$("#mobile-date").hide();
+				$(function () {
+				    $("#daterangepicker").daterange({
+				       dateFormat: "dd/mm/yy", //date format
+					rangeSeparator: "-" // the string between first and last date
+				    });
+				});
+			}
+			else{
+				$("#desktop-date").hide();
+				$(function() {
+				    $("#mobile-datepicker-1, #mobile-datepicker-2").datepicker();
+				});
+			}
+			
+
+			$(".search-container").on("scroll", function(){
+			var cale = $(this).find("input.hasDatepicker");
 			$("#ui-datepicker-div").css("top", cale.offset().top +cale.outerHeight());
-
+ 
 		})
 
 var d = new Date();

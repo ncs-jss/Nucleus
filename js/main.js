@@ -425,7 +425,7 @@ $(document).keyup(function(e) {
  
   if (e.keyCode === 27){
   	
-		$(".relevant-info").fadeOut("fast");
+		$(".relevant-info, .search-container").fadeOut("fast");
 		$("body").css({
 			'overflow-y': 'scroll'
 		})
