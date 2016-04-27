@@ -15,13 +15,29 @@
 
 	
 	
+
  
 </head>
 
 <body>
 
+	<div class="my-prompt-container">
+		<div class="my-prompt">
+			<h2>Confirm delete this notice?</h2>
+			<form>
+				<button type="submit" class="delete-notice">
+					Yes
+				</button>
+				<input type="hidden" val="">
+			</form>
+			<button type="none" class="no-delete">
+					No
+				</button>
+		</div>
+	</div>
+
 	<div class="notice-msg">
-		Your notice has been uploaded.
+		Your notice has been deleted.
 	</div>
 
 	<div class="overlay-dark-mob">
@@ -57,7 +73,7 @@
 
 		<div class="left-nav-inner">
 			<ul>
-				<li class="active move-in">
+				<li class=" move-in">
 					<a href="#">
 					<i class="fa fa-thumb-tack"></i> &nbsp;Relevant<!-- <span class="number active_number">5</span> --></a>
 				</li>
@@ -98,7 +114,7 @@
 						<i class="fa fa-user"></i> &nbsp;My profile</a>
 					</li>
 					<li>
-						<a href="notices.html">
+						<a href="mynotices.html" class="active">
 						<i class="fa fa-cloud-upload"></i> &nbsp;My uploaded notices</a>
 					</li>
 					<li class=" move-in">
@@ -202,7 +218,7 @@
 			<div class="row">
 				<div class="heading col sm-col-6">
 
-					<h1><span class="mobile-menu"><i class="fa fa-bars"></i></span>Relevant</h1>
+					<h1><span class="mobile-menu"><i class="fa fa-bars"></i></span>My Notices</h1>
 				</div>
 				<div class="col sm-col-6">
 
@@ -229,27 +245,28 @@
 
 		<div class="relevant-content-head">
 			<ul>
-				<li class="desktop">
+				<li class="my-desktop">
+				
 					<div class="row">
-						<div class="imp col sm-col  sm-col-1">
-							Starred
+						<div class="col col-8">
+							Notices 
 						</div>
-						<div class="col sm-col sm-col-10">
-						<div class="row"> 
-						<div class="col sm-col sm-col-2">
-							Posted By
-						</div>
-						<div class="col sm-col sm-col-8">
-							Post
-						</div>
-						<div class="col sm-col sm-col-2">
-							Date
+						<div class="col col-4">
+							<div class="col sm-col-6">
+								Date
+							</div>
+							<div class="col sm-col-3">
+								Edit
+							</div>
+							<div class="col sm-col-3">
+								Delete	
+
+							</div>
 						</div>
 					</div>
-				</div>
-					</div>
+				
 				</li>
-				<li class="mobile">
+				<li class="my-mobile">
 					<div class="row">
 						
 						
@@ -265,356 +282,30 @@
 
 		<div class=" relevant-content">
 			<ul>
-				<li>
+				<li class="my-notice-list">
 					<div class="row">
-						<div class="star imp col sm-col   sm-col-1">
-							<i class="fa fa-star"></i>
+						<div class="my-notice-pad preview col col-8">
+							Notices will come here so that one can easily edit or delete it.
+							Notices will come here so that one can easily edit or delete it.
+							Notices will come here so that one can easily edit or delete it.
 						</div>
-						<div class="sec col sm-col sm-col-10">
-						<div class="row"> 
-							
-						<div class="author col sm-col sm-col-2">
-							PN Nagabushan Dr S
-						</div>
-						<div class="post_head col sm-col sm-col-8">
-							dolor sit amet, consectetur adipiscing elit. Praesent sed erat et nibh efficitur mole<br>
-							 <div class="row mobile sub-detail">
-							 <span class=" left col sm-col-8">Posted by Akash Jain </span>
-							 <span class="date-mob  right col sm-col sm-col-4">22/Feb/2016</span>
+						<div class="my-notice-pad col col-4">
+							<div class="col sm-col-6">
+								Date
+							</div>
+							<div class="my-icons col sm-col-3">
+								<i class="fa fa-pencil">
+								</i>
+							</div>
+							<div class="my-icons col sm-col-3">
+								<i class="trash-notice fa fa-trash">
+								</i>	
+
 							</div>
 						</div>
-						<div class="date col  sm-col sm-col-2">
-							Date
-						</div>
-					</div>
-					</div>
 					</div>
 				</li>
-				<li>
-					<div class="row">
-						<div class="star imp col sm-col   sm-col-1">
-							<i class="fa fa-star"></i>
-						</div>
-						<div class="sec col sm-col sm-col-10">
-						<div class="row"> 
-							
-						<div class="author col sm-col sm-col-2">
-							PN Nagabushan Dr S
-						</div>
-						<div class="post_head col sm-col sm-col-8">
-							dolor sit amet, consectetur adipiscing elit. Praesent sed erat et nibh efficitur mole<br>
-							 <div class="row mobile sub-detail">
-							 <span class=" left col sm-col-8">Posted by Akash Jain </span>
-							 <span class="date-mob  right col sm-col sm-col-4">22/Feb/2016</span>
-							</div>
-						</div>
-						<div class="date col  sm-col sm-col-2">
-							Date
-						</div>
-					</div>
-					</div>
-					</div>
-				</li>
-				<li>
-					<div class="row">
-						<div class="star imp col sm-col   sm-col-1">
-							<i class="fa fa-star"></i>
-						</div>
-						<div class="sec col sm-col sm-col-10">
-						<div class="row"> 
-							
-						<div class="author col sm-col sm-col-2">
-							PN Nagabushan Dr S
-						</div>
-						<div class="post_head col sm-col sm-col-8">
-							dolor sit amet, consectetur adipiscing elit. Praesent sed erat et nibh efficitur mole<br>
-							 <div class="row mobile sub-detail">
-							 <span class=" left col sm-col-8">Posted by Akash Jain </span>
-							 <span class="date-mob  right col sm-col sm-col-4">22/Feb/2016</span>
-							</div>
-						</div>
-						<div class="date col  sm-col sm-col-2">
-							Date
-						</div>
-					</div>
-					</div>
-					</div>
-				</li>
-				<li>
-					<div class="row">
-						<div class="star imp col sm-col   sm-col-1">
-							<i class="fa fa-star"></i>
-						</div>
-						<div class="sec col sm-col sm-col-10">
-						<div class="row"> 
-							
-						<div class="author col sm-col sm-col-2">
-							PN Nagabushan Dr S
-						</div>
-						<div class="post_head col sm-col sm-col-8">
-							dolor sit amet, consectetur adipiscing elit. Praesent sed erat et nibh efficitur mole<br>
-							 <div class="row mobile sub-detail">
-							 <span class=" left col sm-col-8">Posted by Akash Jain </span>
-							 <span class="date-mob  right col sm-col sm-col-4">22/Feb/2016</span>
-							</div>
-						</div>
-						<div class="date col  sm-col sm-col-2">
-							Date
-						</div>
-					</div>
-					</div>
-					</div>
-				</li>
-				<li>
-					<div class="row">
-						<div class="star imp col sm-col   sm-col-1">
-							<i class="fa fa-star"></i>
-						</div>
-						<div class="sec col sm-col sm-col-10">
-						<div class="row"> 
-							
-						<div class="author col sm-col sm-col-2">
-							PN Nagabushan Dr S
-						</div>
-						<div class="post_head col sm-col sm-col-8">
-							dolor sit amet, consectetur adipiscing elit. Praesent sed erat et nibh efficitur mole<br>
-							 <div class="row mobile sub-detail">
-							 <span class=" left col sm-col-8">Posted by Akash Jain </span>
-							 <span class="date-mob  right col sm-col sm-col-4">22/Feb/2016</span>
-							</div>
-						</div>
-						<div class="date col  sm-col sm-col-2">
-							Date
-						</div>
-					</div>
-					</div>
-					</div>
-				</li>
-				<li>
-					<div class="row">
-						<div class="star imp col sm-col   sm-col-1">
-							<i class="fa fa-star"></i>
-						</div>
-						<div class="sec col sm-col sm-col-10">
-						<div class="row"> 
-							
-						<div class="author col sm-col sm-col-2">
-							PN Nagabushan Dr S
-						</div>
-						<div class="post_head col sm-col sm-col-8">
-							dolor sit amet, consectetur adipiscing elit. Praesent sed erat et nibh efficitur mole<br>
-							 <div class="row mobile sub-detail">
-							 <span class=" left col sm-col-8">Posted by Akash Jain </span>
-							 <span class="date-mob  right col sm-col sm-col-4">22/Feb/2016</span>
-							</div>
-						</div>
-						<div class="date col  sm-col sm-col-2">
-							Date
-						</div>
-					</div>
-					</div>
-					</div>
-				</li>
-				<li>
-					<div class="row">
-						<div class="star imp col sm-col   sm-col-1">
-							<i class="fa fa-star"></i>
-						</div>
-						<div class="sec col sm-col sm-col-10">
-						<div class="row"> 
-							
-						<div class="author col sm-col sm-col-2">
-							PN Nagabushan Dr S
-						</div>
-						<div class="post_head col sm-col sm-col-8">
-							dolor sit amet, consectetur adipiscing elit. Praesent sed erat et nibh efficitur mole<br>
-							 <div class="row mobile sub-detail">
-							 <span class=" left col sm-col-8">Posted by Akash Jain </span>
-							 <span class="date-mob  right col sm-col sm-col-4">22/Feb/2016</span>
-							</div>
-						</div>
-						<div class="date col  sm-col sm-col-2">
-							Date
-						</div>
-					</div>
-					</div>
-					</div>
-				</li>
-				<li>
-					<div class="row">
-						<div class="star imp col sm-col   sm-col-1">
-							<i class="fa fa-star"></i>
-						</div>
-						<div class="sec col sm-col sm-col-10">
-						<div class="row"> 
-							
-						<div class="author col sm-col sm-col-2">
-							PN Nagabushan Dr S
-						</div>
-						<div class="post_head col sm-col sm-col-8">
-							dolor sit amet, consectetur adipiscing elit. Praesent sed erat et nibh efficitur mole<br>
-							 <div class="row mobile sub-detail">
-							 <span class=" left col sm-col-8">Posted by Akash Jain </span>
-							 <span class="date-mob  right col sm-col sm-col-4">22/Feb/2016</span>
-							</div>
-						</div>
-						<div class="date col  sm-col sm-col-2">
-							Date
-						</div>
-					</div>
-					</div>
-					</div>
-				</li>
-				<li>
-					<div class="row">
-						<div class="star imp col sm-col   sm-col-1">
-							<i class="fa fa-star"></i>
-						</div>
-						<div class="sec col sm-col sm-col-10">
-						<div class="row"> 
-							
-						<div class="author col sm-col sm-col-2">
-							PN Nagabushan Dr S
-						</div>
-						<div class="post_head col sm-col sm-col-8">
-							dolor sit amet, consectetur adipiscing elit. Praesent sed erat et nibh efficitur mole<br>
-							 <div class="row mobile sub-detail">
-							 <span class=" left col sm-col-8">Posted by Akash Jain </span>
-							 <span class="date-mob  right col sm-col sm-col-4">22/Feb/2016</span>
-							</div>
-						</div>
-						<div class="date col  sm-col sm-col-2">
-							Date
-						</div>
-					</div>
-					</div>
-					</div>
-				</li>
-				<li>
-					<div class="row">
-						<div class="star imp col sm-col   sm-col-1">
-							<i class="fa fa-star"></i>
-						</div>
-						<div class="sec col sm-col sm-col-10">
-						<div class="row"> 
-							
-						<div class="author col sm-col sm-col-2">
-							PN Nagabushan Dr S
-						</div>
-						<div class="post_head col sm-col sm-col-8">
-							dolor sit amet, consectetur adipiscing elit. Praesent sed erat et nibh efficitur mole<br>
-							 <div class="row mobile sub-detail">
-							 <span class=" left col sm-col-8">Posted by Akash Jain </span>
-							 <span class="date-mob  right col sm-col sm-col-4">22/Feb/2016</span>
-							</div>
-						</div>
-						<div class="date col  sm-col sm-col-2">
-							Date
-						</div>
-					</div>
-					</div>
-					</div>
-				</li>
-				<li>
-					<div class="row">
-						<div class="star imp col sm-col   sm-col-1">
-							<i class="fa fa-star"></i>
-						</div>
-						<div class="sec col sm-col sm-col-10">
-						<div class="row"> 
-							
-						<div class="author col sm-col sm-col-2">
-							PN Nagabushan Dr S
-						</div>
-						<div class="post_head col sm-col sm-col-8">
-							dolor sit amet, consectetur adipiscing elit. Praesent sed erat et nibh efficitur mole<br>
-							 <div class="row mobile sub-detail">
-							 <span class=" left col sm-col-8">Posted by Akash Jain </span>
-							 <span class="date-mob  right col sm-col sm-col-4">22/Feb/2016</span>
-							</div>
-						</div>
-						<div class="date col  sm-col sm-col-2">
-							Date
-						</div>
-					</div>
-					</div>
-					</div>
-				</li>
-				<li>
-					<div class="row">
-						<div class="star imp col sm-col   sm-col-1">
-							<i class="fa fa-star"></i>
-						</div>
-						<div class="sec col sm-col sm-col-10">
-						<div class="row"> 
-							
-						<div class="author col sm-col sm-col-2">
-							PN Nagabushan Dr S
-						</div>
-						<div class="post_head col sm-col sm-col-8">
-							dolor sit amet, consectetur adipiscing elit. Praesent sed erat et nibh efficitur mole<br>
-							 <div class="row mobile sub-detail">
-							 <span class=" left col sm-col-8">Posted by Akash Jain </span>
-							 <span class="date-mob  right col sm-col sm-col-4">22/Feb/2016</span>
-							</div>
-						</div>
-						<div class="date col  sm-col sm-col-2">
-							Date
-						</div>
-					</div>
-					</div>
-					</div>
-				</li>
-				<li>
-					<div class="row">
-						<div class="star imp col sm-col   sm-col-1">
-							<i class="fa fa-star"></i>
-						</div>
-						<div class="sec col sm-col sm-col-10">
-						<div class="row"> 
-							
-						<div class="author col sm-col sm-col-2">
-							PN Nagabushan Dr S
-						</div>
-						<div class="post_head col sm-col sm-col-8">
-							dolor sit amet, consectetur adipiscing elit. Praesent sed erat et nibh efficitur mole<br>
-							 <div class="row mobile sub-detail">
-							 <span class=" left col sm-col-8">Posted by Akash Jain </span>
-							 <span class="date-mob  right col sm-col sm-col-4">22/Feb/2016</span>
-							</div>
-						</div>
-						<div class="date col  sm-col sm-col-2">
-							Date
-						</div>
-					</div>
-					</div>
-					</div>
-				</li>
-				<li>
-					<div class="row">
-						<div class="star imp col sm-col   sm-col-1">
-							<i class="fa fa-star"></i>
-						</div>
-						<div class="sec col sm-col sm-col-10">
-						<div class="row"> 
-							
-						<div class="author col sm-col sm-col-2">
-							PN Nagabushan Dr S
-						</div>
-						<div class="post_head col sm-col sm-col-8">
-							dolor sit amet, consectetur adipiscing elit. Praesent sed erat et nibh efficitur mole<br>
-							 <div class="row mobile sub-detail">
-							 <span class=" left col sm-col-8">Posted by Akash Jain </span>
-							 <span class="date-mob  right col sm-col sm-col-4">22/Feb/2016</span>
-							</div>
-						</div>
-						<div class="date col  sm-col sm-col-2">
-							Date
-						</div>
-					</div>
-					</div>
-					</div>
-				</li>
+				
 				
 
 				<ul>

@@ -97,7 +97,7 @@ $(document).ready(function () {
 
 	$(".relevant-info").hide();
 
-	$(".sec").click(function () {
+	$(".sec , .preview").click(function () {
 		location.hash = "details";
 		var index = $(".relevant-content ul li").index(this);
 
@@ -641,5 +641,38 @@ else{
       }
     
   });
+
+  // notice messages======
+
+  $(".notice-msg").animate({
+  	'top':'20px',
+  	'opacity':'1'
+  },700);
+
+var back_notice=function(){
+	$(".notice-msg").animate({
+  	'top':'-20px',
+  	'opacity':'0'
+  },700);
+}
+
+setTimeout(function(){
+	back_notice();
+
+},2000)
+
+$(".notice-msg-cross").click(function(){
+	back_notice();
+})
+
+$(".my-prompt-container").hide();
+
+$(".trash-notice").click(function() {
+	$(".my-prompt-container").fadeIn();
+})
+
+$(".no-delete").click(function() {
+	$(".my-prompt-container").fadeOut();
+})
 
 });
