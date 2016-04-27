@@ -98,6 +98,7 @@ $(document).ready(function () {
 	$(".relevant-info").hide();
 
 	$(".sec").click(function () {
+		location.hash = "details";
 		var index = $(".relevant-content ul li").index(this);
 
 		$(".relevant-info ").hide().fadeIn();
@@ -631,12 +632,14 @@ else{
 })
 
 
+// remove loader on click back button
 
-// $(".create-notice-button").click(function() {
-	
-// 		$("#create-notice-form").submit();
-// })
-
-
+  $(window).bind('hashchange', function () {
+    
+      if (location.hash == null || location.hash == "") {
+          $(".relevant-info").hide();
+      }
+    
+  });
 
 });
