@@ -677,12 +677,19 @@ footer h4{
 	transition:all 0.2s ease-in-out;
 
 }
+.bold-light{
+	color: #4d4d4d;
+	font-family: 'Roboto Medium'
+}
+.index-author{
+	color: #9d9d9d;
+}
 .pad-list a:hover{
 	background: #ddd;
 	
 }
 .date-index{
-	text-align: center;
+	text-align: left;
 	color: #9d9d9d;
 	font-family: 'Roboto Medium';
 	transition:all 0.2s ease-in-out;
@@ -972,7 +979,7 @@ input[type="file"].input-upload{
 .notice-msg{
 	opacity: 0;
 	/*display: inline-block;*/
-	position: absolute;
+	position: fixed;
 	z-index: 100;
 	background: #191232;
 	border-radius: 4px;
@@ -1145,7 +1152,7 @@ button.no-delete:hover{
 	display: none;
 }
 .date-index{
-	text-align: right;
+	text-align: left;
 }
 .auth-index{
 	text-align: left;
