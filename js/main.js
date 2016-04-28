@@ -84,9 +84,15 @@ $(document).ready(function () {
 	})
 	$(".imp i").click(function () {
 		if ($(this).parent().hasClass("active_star")) {
+			var id = $(this).attr('id');
+			console.log(id.slice(9));
+			removeBookmark(id.slice(9));
 			$(this).parent().removeClass("active_star");
 
 		} else {
+			var id = $(this).attr('id');
+			addBookmark(id.slice(9));
+			console.log(id.slice(9));
 			$(this).parent().addClass("active_star");
 
 		}
@@ -97,16 +103,43 @@ $(document).ready(function () {
 
 	$(".relevant-info").hide();
 
-	$(".sec , .preview").click(function () {
-		location.hash = "details";
+	$(".sec").click(function () {
+		$(".relevant-info").hide().fadeIn();
 		var index = $(".relevant-content ul li").index(this);
-
-		$(".relevant-info ").hide().fadeIn();
+		var id = $(this).attr('id');
+		console.log('the id is '+id);
+		var description = $("#notice_description_"+id).text();
+		var title = $("#notice_title_"+id).text();
+		var modified = $("#notice_modified_"+id).text();
+		var faculty = $("#notice_faculty_"+id).text();
+		var file_attached = $("#notice_file_attached_"+id).val();
+		console.log("'"+file_attached+"'");
+		if (typeof file_attached == "undefined") {
+			$("#notice_download_attachment").hide();
+		}
+		else {
+			$("a#download_attachment").prop("href", file_attached);
+		}
+		$("#notice_description").html(description);
+		$("#notice_title").html(title);
+		$("#notice_posted_by").html("Posted By "+faculty+" "+modified);
 
 		$("body").css({
 			'overflow': 'hidden'
 		})
 	})
+
+
+
+	$(" .preview").click(function () {	
+		location.hash = "details";
+		var index = $(".relevant-content ul li").index(this);
+		$(".relevant-info ").hide().fadeIn();
+		$("body").css({
+			'overflow': 'hidden'
+		})
+	})			
+
 
 	$(".relevant-info .cross").click(function () {
 		$(".relevant-info").fadeOut("fast");
@@ -455,9 +488,9 @@ $("#branch-id").change(function(){
 $(".edit-save,.edit-save-2,.show-icon,i.mob-save").hide();
 
 $(".edit-save,.edit-save-2,i.mob-save").click(function(){
+	$(".profile-form form").submit();
 	$(".profile-form input").prop('disabled',true);
 
-	$(".profile-form form").submit();
 	$(".show-icon").fadeOut();
 
 
@@ -614,12 +647,14 @@ $(".add").click(function () {
 		section_val=$("#create-section option:selected").text();
 
 		tag_value=course_val + '-' + branch_val + '-' + year_val +'-' + section_val;
-	
+
+		var tag_value_remove=tag_value.split(' ').join('');
+
 // 	$("#tag-input-val").val(function(){
 // 	return c=c+tag_value+', ';
 // });
 
-$("#tag-input").append("<li>"+tag_value+"&nbsp;&nbsp;&nbsp;<i class='fa fa-times'></i></li>");
+$("#tag-input").append("<li>"+tag_value+"&nbsp;&nbsp;&nbsp;<i class='fa fa-times'></i><input type='hidden' name='notice_for' value="+tag_value_remove+"></li>");
 $("#tag-input li i").click(function(){
 	console.log("ebr")
 	$(this).parent().remove();
@@ -674,5 +709,7 @@ $(".trash-notice").click(function() {
 $(".no-delete").click(function() {
 	$(".my-prompt-container").fadeOut();
 })
+
+
 
 });
