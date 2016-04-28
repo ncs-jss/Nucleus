@@ -722,7 +722,7 @@ $(".no-delete").click(function() {
 
 // making footer down fixed
 
-var id=5;
+var id=2;
 
 (function sticky_footer (argument) {
 
