@@ -1,5 +1,20 @@
 $(document).ready(function () {
 
+$("body").css({
+	'overflow-y':'hidden'
+})
+$(".loader-container").fadeIn();
+	$(window).load(function  () {
+		$(".loader-container").delay(1000).fadeOut();
+		setTimeout(function(){
+			$("body").css({
+				'overflow-y':'scroll'
+			})
+		},1000)
+		
+	})
+
+
 	$(".left-nav-inner ul li").click(function () {
 		$(this).addClass("active").siblings().removeClass("active");
 		$(this).find("span").addClass("active_number");
@@ -704,6 +719,27 @@ $(".no-delete").click(function() {
 	$(".my-prompt-container").fadeOut();
 })
 
+
+// making footer down fixed
+
+var id=5;
+
+(function sticky_footer (argument) {
+
+	if($(window).width()>=780 && id<=3){
+		$("footer").css({
+			'position':'fixed',
+			'bottom':'0px',
+			'width':'calc(100vw - 220px)'
+		})
+	}
+	else{
+		$("footer").css({
+			'position':'relative',
+			'width':'auto'
+		})
+	}
+})();
 
 
 });
