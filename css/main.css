@@ -1089,6 +1089,58 @@ button.no-delete:hover{
 	font-family: 'Roboto';
 	line-height: 19px;
 }
+/*contact us====================*/
+
+.contact-container{
+	text-align: center;
+}
+.contact-container h3{
+	font-size: 1em;
+}
+.contact-container form{
+	width: 500px;
+	padding-top: 40px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 40px;
+}
+.contact-container form textarea{
+	height: 100px;
+}
+.contact-container form input{
+	margin-top: 0px;
+}
+.reset-contact,.submit-contact{
+	display: inline;
+	padding: 10px 17px;
+	background: #403469;
+	border-radius: 20px;
+	outline: 0;
+	box-shadow: 0px;
+	border: 0px;
+	cursor: pointer;
+	transition:all 0.2s ease-in-out;
+	color: #fff;
+	float: right;
+}
+ .submit-contact:hover{
+	background: #2d2251;
+}
+
+.reset-contact
+{float: left;
+	color: #4d4d4d;
+	padding: 8px 15px;
+	background: transparent;
+	border: 2px solid #9d9d9d;
+}
+.reset-contact:hover{
+	color: #fff;
+	background: #403469;
+	border: 2px solid #403469;
+
+}
 @media(max-width: 950px){
 	.pad-list a{
 		padding:18px 30px 18px 30px
@@ -1214,6 +1266,7 @@ ul li.my-notice-list  .my-notice-pad{
 	padding: 20px;
 	
 }
+
 }
 
 
@@ -1246,7 +1299,9 @@ ul li.my-notice-list  .my-notice-pad{
 h3.create-head{
 	font-size: 22px;
 }
-
+.contact-container form{
+	width: 300px;
+}
 }
 @media(max-width: 480px){
 	.jss-logo{
