@@ -4,7 +4,7 @@ body{
 
 }
 .left-nav-inner ul li .active{
-	background: #403469;
+	background: #00acc1;
 	color: #fff;
 }
 
@@ -33,7 +33,8 @@ body{
 	z-index: 1;
 }
 .left-nav-inner{
-	display: inline-block;
+/*	display: inline-block;*/
+	display: none;
 	position: absolute;
 	top:115;
 	width: 100%;
@@ -69,7 +70,7 @@ body{
 
 
 /*.left-nav-inner ul li:active{
-	background: #403469;
+	background: #00acc1;
 	color: #fff;
 }*/
 
@@ -131,7 +132,7 @@ header,.sub-header{
 	padding: 12px 20px 5px 20px;
 }
 .left-nav-inner ul  .active{
-	background: #403469;
+	background: #00acc1;
 	color: #fff;
 }
 .left-nav-inner ul li .number{
@@ -141,6 +142,10 @@ header,.sub-header{
 .left-nav-inner ul li .active_number{
 	
 	color:#e6c115;
+}
+
+.left-nav-home{
+    background: transparent !important;
 }
 .heading{
 	font-family: 'Roboto Medium';
@@ -354,10 +359,10 @@ header,.sub-header{
 	color:rgb(255, 178, 15) !important;
 }
 footer{
-	background-color: #403469;
+	background-color: #00acc1;
 	width: 100%;
 	/*padding: 20px;*/
-	padding: 20px 0px 0px 0px;	
+/*	padding: 20px 0px 0px 0px;	*/
 	/*height: 200px;*/
 	color:#fff;
 }
@@ -370,7 +375,7 @@ footer{
 
 }
 .footer-links{
-		color:#908a9f;
+		color:white;
 	font-size: 0.9em;
 	font-family: 'Roboto' ;
 	padding: 12px 0px;
@@ -390,16 +395,20 @@ footer{
 .footer-links h4:hover{
 	color: #fff;
 }
+
+
+
 footer h4{
 	padding-left: 20px;
 }
 .sub-footer{
 	width: 100%;
 	padding: 15px 35px 15px 0px; 
+    text-align: center;
 	color: #000;
-	background-color: #2d2251;
-	margin-top: 20px;
-	font-size: 0.8em;
+	background-color: white;
+/*	margin-top: 20px;*/
+	font-size: 1em;
 
 }
 .relevant-info {
@@ -623,7 +632,8 @@ footer h4{
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: #180f36;
+/*	background: #180f36;*/
+    background: #2a919e;
 	opacity: 0.9;
 }
 .index-header{
@@ -673,7 +683,7 @@ footer h4{
 .pad-list a{
 	color: #4d4d4d;
 	width: 100%;
-	padding: 18px 50px 18px 60px;
+	padding: 1% 4%;
 	transition:all 0.2s ease-in-out;
 
 }
@@ -698,7 +708,7 @@ footer h4{
 	color: #4d4d4d;
 }
 .new-college-container{
-	background: #f9f9f9;
+/*	background: #f9f9f9;*/
 }
 .head-links-2{
 	text-align: right;
@@ -718,7 +728,8 @@ footer h4{
 	font-size: 0.9em;
 	color: #fff;
 	padding-top: 10px;
-	color: #A493D1;
+/*	color: #A493D1;*/
+	color: #222;
 }
 .logo-index img{
 	height: 100%;
@@ -729,7 +740,7 @@ footer h4{
 	/*padding-left: 250px;*/
 }
 .index-head{
-	text-align: center;
+/*	text-align: center;*/
 
 	padding: 30px 30px 20px 30px;
 	
@@ -925,7 +936,7 @@ input[type="file"].input-upload{
 	margin-right: 10px;
 }
 .add:hover{
-	background: #403469;
+	background: #00acc1;
 	box-shadow: 1px 1px 4px #9d9d9d;
 	color: #e6c115;
 }
@@ -970,7 +981,7 @@ input[type="file"].input-upload{
 	transition:all 0.2s ease-in-out;
 }
 .create-notice-button:hover{
-	background: #403469;
+	background: #00acc1;
 }
 
 /*notice msg================*/
@@ -1061,7 +1072,7 @@ ul li.my-notice-list .preview{
 	float: left;
 	outline: none;
 	border:0px;
-	background:#403469;
+	background:#00acc1;
 	margin: 10px 20px 0px 20px;
 	cursor: pointer;
 	color: #fff;
@@ -1080,8 +1091,8 @@ button.no-delete{
 }
 button.no-delete:hover{
 	color: #fff;
-	background: #403469;
-	border: 2px solid #403469;
+	background: #00acc1;
+	border: 2px solid #00acc1;
 }
 .about-container{
 	padding: 0px 70px 20px 70px;
@@ -1115,7 +1126,7 @@ button.no-delete:hover{
 .reset-contact,.submit-contact{
 	display: inline;
 	padding: 10px 17px;
-	background: #403469;
+	background: #00acc1;
 	border-radius: 20px;
 	outline: 0;
 	box-shadow: 0px;
@@ -1148,8 +1159,8 @@ button.no-delete:hover{
 }
 .reset-contact:hover{
 	color: #fff;
-	background: #403469;
-	border: 2px solid #403469;
+	background: #00acc1;
+	border: 2px solid #00acc1;
 
 }
 
@@ -1221,7 +1232,7 @@ button.no-delete:hover{
 }
 @media(max-width: 950px){
 	.pad-list a{
-		padding:18px 30px 18px 30px
+		padding:3% 3%;
 	}
 	.new-notices-container h2{
 	padding-left: 30px;
@@ -1229,6 +1240,11 @@ button.no-delete:hover{
 
 }
 
+
+.footer-links{
+    display: flex;
+    justify-content: space-around;
+}
 
 @media(max-width: 780px){
 	.index-welcome span{
@@ -1253,8 +1269,9 @@ button.no-delete:hover{
 	width: 220px;
 	height: 100vh;
 	background: #2d2251;
+
+    }
 	
-}
 .relevant-page{
 	padding-left: 0px;
 }
@@ -1399,3 +1416,131 @@ h3.create-head{
 
 
 
+.container-wrapper{
+    display: flex;
+    padding: 0 3%;
+}
+
+
+.new-notices-container{
+    margin: 2%;
+    border: 1px solid #00acc1;
+    flex: 1;
+    position: relative;
+}
+
+
+.new-notices-container img{
+    position: absolute;
+    top: -8%;
+    right:-5%;
+}
+
+.new-notices-list{
+    font-size: 14px;
+    margin: 0 !important;
+}
+
+footer img{
+width: 100%;    
+}
+
+
+/*...................navigation starts...............*/
+
+.navigation{
+    display: flex;
+}
+
+.right-nav-container{
+    flex: 1;
+    position: fixed;
+    right: 0;
+    top: 1%;
+}
+
+.right-nav-container ul{
+    justify-content: flex-end;
+}
+
+.left-nav-container{
+    flex: 1;
+}
+.nav-container ul{
+    display: flex;
+    background: #fff;
+    margin:0;
+}
+
+.nav-container li{
+    flex-shrink: 0;
+    list-style: none;
+}
+
+.nav-container a{
+    font-size: 14px;
+    letter-spacing: .5px;
+    padding:  .8em;
+    color: #393939;
+    display: flex;
+    justify-content: center;
+    transition: .2s ease;
+}
+
+.nav-container a:hover{
+    color: black;
+    transition: .2s ease;
+}
+
+
+
+@media(max-width: 780px){
+    .left-nav-inner {
+        display: inline-block;
+    }
+
+    .navigation{
+        display: none;
+    }
+
+    .container-wrapper{
+        display: block;
+    }
+
+    .index-logo{
+       text-align: center;
+    }
+    .index-head .tag-line{
+        text-align: center;
+
+    }
+    .container-wrapper{
+        padding: 3% 0;
+    }
+    .footer-links > a{
+        margin-top: 2%;
+        
+    }
+    .footer-links{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+@media(min-width:780px){
+    #home-overlay{
+        display: none;
+    }
+    #home-logo{
+        position: absolute !important;
+    }
+
+    .index-logo{
+        margin-left: 220px;
+    }
+    .index-head .tag-line{
+        margin-left: 220px;
+
+    }
+}

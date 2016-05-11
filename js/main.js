@@ -724,22 +724,22 @@ $(".no-delete").click(function() {
 
 var id=2;
 
-(function sticky_footer (argument) {
-
-	if($(window).width()>=780 && id<=3){
-		$("footer").css({
-			'position':'fixed',
-			'bottom':'0px',
-			'width':'calc(100vw - 220px)'
-		})
-	}
-	else{
-		$("footer").css({
-			'position':'relative',
-			'width':'auto'
-		})
-	}
-})();
+//(function sticky_footer (argument) {
+//
+//	if($(window).width()>=780 && id<=3){
+//		$("footer").css({
+//			'position':'fixed',
+//			'bottom':'0px',
+//			'width':'calc(100vw - 220px)'
+//		})
+//	}
+//	else{
+//		$("footer").css({
+//			'position':'relative',
+//			'width':'auto'
+//		})
+//	}
+//})();
 
 
 });
